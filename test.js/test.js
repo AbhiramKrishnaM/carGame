@@ -73,7 +73,7 @@ function gameApp(){
        j++;
     }
 
-
+   
 }
 
 function renderCar(){
@@ -113,7 +113,23 @@ function createPumpArray(){
 
 }
 
+function clearWin(){
+location.reload();
+}
+
 // call the function when the button is clicked
 
-document.getElementById('btn').addEventListener('click', gameApp);
+document.getElementById('btn').addEventListener('click', clicked);
+
+var refCheck = 1;
+function clicked(){
+    if(refCheck == 1){
+        refCheck = 0
+        gameApp();
+    }
+    else{
+        location.reload();
+        
+    }
+}
 
