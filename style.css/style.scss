@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 1rem;
+  font-size: 3rem;
+}
+h2 {
+  display: visible;
+  text-align: center;
+  padding: 2rem;
+}
+.contain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+#arr {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  // display: none;
+}
+#ls {
+  font-size: 1rem;
+}
+#btn {
+  background-color: rgb(133, 92, 92);
+  border: none;
+  outline: none;
+  cursor: grabbing;
+  padding: 0.5rem 0.5rem;
+}
+
+.game {
+  margin: 1rem 1rem;
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
