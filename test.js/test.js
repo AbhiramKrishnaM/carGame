@@ -35,7 +35,7 @@ function gameApp(){
 
         for(var i = 0; i < pumpLocation.length; i++){
 
-            if(traversedDistance == pumpLocation[i])
+            if(traversedDistance == pumpLocation[i] || ((traversedDistance >= pumpLocaiton[i]) && (traversedDistance <= pumpLocation[i+1])) )
             {
                 console.log(i);  
                 diff = Math.abs(traversedDistance - pumpLocation[i]);
